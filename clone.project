@@ -1,0 +1,691 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenskart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      *{
+    margin:0 auto; 
+    box-sizing: border-box;
+    padding: 0;
+  overflow-x: hidden;
+    overflow-y: auto; 
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav{
+    margin-top: 8px;
+    margin-left: -10%;
+    font-style: arial;
+    font-size: 12px; 
+    color: #000042;
+    cursor: pointer;
+}
+.nav-sec{
+    display: flex;
+    font-style: arial;
+    /* font-size: 15px;  */
+    word-spacing: 1.5px;
+    /* text-align: left; */
+justify-content: space-evenly;
+}
+
+
+.ctu{
+    margin-top: 8px;
+    /* padding-left: 0.5rem; */
+   font-style: arial;
+   font-size: 12px; 
+   color: #000042;
+   margin-right: -25%;
+   cursor: pointer;
+}
+.nav-bar{
+    width: 1024px;
+    height: 50px;
+}
+.search-input{
+    width: 40%;
+    height: 34px;
+    font-size: 1rem;
+    border: none;
+    border: 1px solid rgba(0,0,66,.5);
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -.02em;
+    color: rgba(0,0,66,.5);
+}
+
+.nav-bar2{
+    display: flex;
+justify-content: space-between; 
+    align-items: center;
+padding: 1rem;
+cursor: pointer;
+}
+.nav-right{
+    margin-right: -2%;
+    width: 370px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #000042;
+    cursor: pointer;
+   
+}
+.logo{
+    margin-left: -20px;
+}
+.nav-bar3{
+display: flex; 
+
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color:  #f0f4f4;
+    cursor: pointer;
+}
+.cont{
+    display: flex;
+    width: 70%;
+    /* justify-content: space-between;  */
+    color: #000042;
+    line-height: 60px;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -.02em;
+    text-transform: capitalize;
+    margin-left: -0.3rem;
+}
+.im{
+    overflow: hidden;
+    border-radius: 4px;
+    width: 4.5vw;
+    height: 4.5vh;
+    background-size: cover;
+    cursor: pointer;
+}
+.imgg{
+    margin-right: -0.00005px;
+    padding-right: 1px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+    background-color: #f0f4f4;
+    font-size: 15px;
+    color: #8a8888;
+    font-family: 'FuturaStd-Medium';
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.eyeg{
+    /* margin-top: 1rem; */
+    border-radius: 5px; 
+    width: 200px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    
+
+}
+.box1{
+    padding: 5px 2.5px 2.5px;
+    /* border-radius: 2px; */
+    background-color:white;
+    width: 220px;
+    height: 150px;
+    border-radius:5px;
+    transition: all 0.03s;
+    cursor: pointer;
+} 
+.box1:hover{
+    transform:  scale(1.03);
+    transition: 0.03s;
+    filter: drop-shadow(0 0 40px lightgray);
+    border-radius: 0%;
+}
+.eyeg:hover{
+    width: 190px;
+    height: 120px;
+    transition: 0.03s;
+    
+}
+.box{
+    font-size: 15px;
+    color: #8a8888;
+    font-family: 'FuturaStd-Medium';
+    letter-spacing: 0.5px;
+    padding-left: 30%;
+    margin-top: -5%;
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    height: 290px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+}
+.cat{
+    display: flex;
+    width: 100%;
+height: 235px;
+margin-top: 40px;
+/* border: 1px solid black; */
+}
+.weartrend{
+   width: 20%;
+    font-family: 'Arial';
+    font-size: 50px;
+    font-weight: 500;
+   margin-left: 20px;
+    padding-top: 2%;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+.w2{
+/* margin-top: 19px; */
+}
+.w3{
+    font-family: 'Futura-Medium';
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.leftarrow1 ,.rightarrow1{
+    font-size: 40px;
+    padding-top: 6%;
+    cursor: pointer;
+    cursor: pointer;
+
+}
+.specs{
+    display: block;
+}
+.figcap{
+    font-family: 'Futura-Medium';
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 80px;
+    cursor: pointer;
+}
+.btn{
+    background: #56b7c3;
+    color: #ffffff;
+    padding: 10px 0 ;
+    width: 140px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 22px;
+    letter-spacing: 0.5px;
+    margin: 22px 40px;
+    cursor: pointer;
+}
+.h4{
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    color: black;
+}
+
+.h4::before{
+    content: '';
+    flex: 1 1;
+    border-bottom: 1px solid #cfcdcd;
+    margin: auto 15px;
+}
+.fonthead{
+    font-family: 'FuturaStd-Medium';
+    letter-spacing: 0.5px;
+    font-size: 30px;
+}
+.mt70{
+    margin-top: 80px;
+}
+h4 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+  }
+  
+  h4 span {
+    background: #fff;
+    padding: 0 10px;
+  }
+  img{
+    margin-top: 1rem;
+  }
+  .stat{
+    overflow: hidden;
+    /* overscroll-behavior: contain; */
+  }
+  .mainh{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    cursor: pointer;
+  }
+  .container-left{
+    display: block;
+  }
+  .container-left{
+    display: block;
+  }
+  .contleft1{
+    width: 430px;
+  }
+ .foot1{
+    width: 100%;
+    height: 460px;
+    background-color: #fff092;
+ }
+ .heading{
+    padding-top: 2.5rem;
+    text-align: center;
+    font-size: xx-large;
+    font-family: futurastd-medium;
+    font-weight: 500;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #333;
+ }
+ .videos{
+    display:flex;
+    justify-content: space-around;
+ }
+ .video{
+    width:30%;
+    cursor: pointer;
+ }
+ .endsec{
+    width: 100%;
+    height: 600px;
+    background-color: #000042;
+ }
+ .txt-strong{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    padding-left: 35px;
+    font-size: 32px;
+    line-height: 40px;
+    word-spacing:3px;
+    color: #f4f4f4;
+ }
+ .sec2{
+    margin-top: 3rem;
+    cursor: pointer;
+ }
+ p {
+    padding-top: 1rem;
+    font-style: arial;
+    line-height: 20px;
+    font-weight: 250;
+    font-size: 16px;
+    letter-spacing: -.02em;
+    word-spacing: 3px;
+    color: #fcfcfc;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+ }
+ h2,#ysp{
+    word-spacing: 3px;
+    color: #fcfcfc;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+ }
+#headi , #about{
+    margin-top: 1.5rem;
+    font-size: 25px;
+    word-spacing:3px;
+    color: #f4f4f4;
+
+}
+.lis{
+    /* width: 100%; */
+    display: flex;
+    margin-left: -2rem;
+}
+.endsec2{
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.endsec2,.last,.lefft,.right{
+    display: flex;
+}
+.iconn{
+    color: #fcfcfc;
+}
+h4{
+    font-size: x-large;
+}
+    </style>
+    <header>
+        <div class="stat">
+    <div class="navbar nav">
+        <div class="nav-sec">
+        <div class="nav">
+            Be More, Do More |
+            Try in 3D |
+            Store Locator | 
+            Quality |
+            USA |
+            Singapore |
+            UAE |
+            John Jacobs |
+            Aqualens |
+            Cobrowsing   |
+            Engineering Blog   |
+            Lenskart Franchise   |
+            Lenskart Optom Partner Program 
+            </div>
+            <div class="ctu "> Contact us</div>   
+    </div>
+
+    </div>
+    <div class="nav-bar2">
+        <div class="logo">
+        <img src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg">
+    </div>
+    <div class="logo2">
+        <img src="https://static.lenskart.com/media/mobile/images/phone_number.svg" height="34px">
+    </div>
+    <input placeholder="What are you looking for" class="search-input">
+    <div class="textt"> 
+       <div class="nav-right">
+      <div class="track">
+        <a>Track order</a> </div> 
+
+    <div class="sign">  
+        <a>Sign In & Sign Up </a>
+       
+      </div>
+      <div class="wish">
+        <i class="fa-regular fa-heart"></i>
+        <a> Wishlist</a>
+        
+      </div>
+      <div class="cart">
+        <a><i class="fa-solid fa-cart-shopping" Cart></i>
+            Cart</a>
+            
+            
+          
+      </div>
+           
+    
+       </div> 
+    </div>
+    </div>
+    <div class="nav-bar3">
+        <div class="cont">
+            <div class="t1">EYEGLASSES</div>
+            <div class="t2">COMPUTER GLASSES</div>
+            <div class="t3">KIDS GLASSES</div>
+            <div class="t4">CONTACT LENSES</div>
+            <div class="T5">SUNGLASSES</div>
+            <div class="T6">HOME EYE-TEST</div>
+            <div class="T7">STORE LOCATOR</div>
+        </div>
+        <div class="imgg">
+            <img src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png" class="im">
+        
+       
+            <img src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png" class="im">
+        
+        
+            <IMG src="https://static.lenskart.com/media/desktop/img/Feb22/18-Feb/goldlogo.jpg" class="im">
+            </div>
+    </div>
+</div>
+    </div>
+    <div class="section">
+        
+     <div class="box1 ">
+        <div class="eyeg" style="background-image:url('https://static1.lenskart.com/media/desktop/img/Apr22/a2.png'); " >
+        </div>
+        <div class="box">Eyeglasses</div>
+     </div>
+     <div class="box1">
+        <div class="eyeg" style="background-image:url('https://static1.lenskart.com/media/desktop/img/Apr22/b2.png'); " >
+        </div>
+        <div class="box">Sunglasses</div>
+     </div>
+     <div class="box1">
+        <div class="eyeg" style="background-image:url('https://static1.lenskart.com/media/desktop/img/Apr22/d2.png'); " >
+        </div>
+        <div class="box">Computer glasses</div>
+     </div>
+     <div class="box1">
+        <div class="eyeg" style="background-image:url('https://static1.lenskart.com/media/desktop/img/Apr22/d.png'); " >
+        </div>
+        <div class="box"> Contact Lenses</div>
+     </div>
+     <div class="box1">
+        <div class="eyeg" style="background-image:url('https://static1.lenskart.com/media/desktop/img/Apr22/e2.png'); " >
+        </div>
+        <div class="box">Power Sunglasses</div>
+     </div>
+     <div class="box1">
+        <div class="eyeg" style="background-image:url('https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg'); " >
+        </div>
+        <div class="box">Progressive Lenses</div>
+     </div>
+    
+        </div>
+    </div>
+    </div>
+    <div class="hero-section">
+        <div class="heroimg">
+        <img src="https://static1.lenskart.com/media/desktop/img/July23/13th-july/refresh/upto-60-con.gif" width="100%">
+    </div>
+    <div class="heroimg2">
+        <img src="https://static1.lenskart.com/media/desktop/img/May23/P2_Web_Banner_F2.gif" width="100%">
+    </div>
+    <div class="heroimg3">
+        <img src="https://static1.lenskart.com/media/desktop/img/Apr22/Bannerforexport.jpg" width="100%">
+    </div>
+    </div>
+    <div class="main">
+        <div class="cat">
+            <div class="weartrend">
+                WEAR THE
+                <div class="w2">TREND</div>
+                <div class="w3">Our hottest collections</div>
+            </div>
+            <div class="leftarrow1">❮</div>
+            <div class="specs1">
+                <img src="https://static1.lenskart.com/media/desktop/img/Sep21/image179.png" width="76%">
+                <div class="figcap">Round</div>
+                <div class="btn">Explore</div>
+            </div>
+            <div class="specs1">
+                <img src="https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg" width="76%">
+                <div class="figcap">Cat-Eyes</div>
+                <div class="btn">Explore</div>
+            </div>
+            <div class="specs1">
+                <img src="https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg" width="76%">
+                <div class="figcap">Clubmaster</div>
+                <div class="btn">Explore</div>
+            </div>
+            <div class="specs1">
+                <img src="https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg" width="76%">
+                <div class="figcap">Transparent</div>
+                <div class="btn">Explore</div>
+            </div>
+            <div class="rightarrow1">❯</div>
+        </div>
+    </div>
+    <div class="sec">
+    <h4 class="fonthead mt70"><span> Premium Eyeglasses - Buy 1 Get 1 + Free Membership</span> </h4>
+    <img src="https://static1.lenskart.com/media/desktop/img/Feb23/23feb/PREMIUM%20BRANDS%20WEB.jpg" width="100%"class="img">
+</div>
+<div class="sec">
+    <h4 class="fonthead mt70"><span> As Seen On Mouni Roy</span> </h4>
+    <img src="https://static1.lenskart.com/media/desktop/img/23may/cannes/web.gif" width="100%" class="img">
+</div>
+<div class="sec">
+    <h4 class="fonthead mt70"><span> As Seen On Shark Tank</span> </h4>
+    <img src="https://static1.lenskart.com/media/desktop/img/Dec22/1-Dec/Homepage-Banner-web.gif" width="100%" class="img">
+</div>
+<div class="sec">
+    <h4 class="fonthead mt70"><span> As Seen On Karan Johar</span> </h4>
+    <img src="https://static1.lenskart.com/media/desktop/img/Dec22/Web_banner.gif" width="100%"class="img">
+</div>
+<div class="sec">
+    <h4 class="fonthead mt70"><span> Trending Glasses</span> </h4>
+    <img src="https://static1.lenskart.com/media/desktop/img/Jan23/sunglasses/Sun-Banner-web.gif" width="100%" class="img">
+</div>
+<div class="sec">
+    <h4 class="fonthead mt70"><span> OJOS</span> </h4>
+    <img src="https://static1.lenskart.com/media/desktop/img/Feb23/23feb/ojos%20banner/ojos%20banner/web%20banner/ojos-web-1199.gif" width="100%" class="img">
+</div>
+<div class="sec">
+    <h4 class="fonthead mt70"><span> Aquacolor - Glam Up With Color Lenses </span> </h4>
+    <img src="https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif" width="100%" class="img">
+</div>
+<div class="sec">
+    <h4 class="fonthead mt70"><span> FIND THE PERFECT FIT </span> </h4>
+    <div class="mainh">
+    <div class="container-left">
+        <div id="contleft1">
+            <img src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/eye-square10.jpg" width="600px" height="625px">
+        </div>
+        <div id="contleft2">
+            <img src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/power-sun-square.jpg" width="600px" height=" 300px">
+        </div>
+    </div>
+    <div class="container-right">
+        <div id="contright1">
+            <img src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/ce-square.jpg" width="600px" height=" 300px">
+        </div>
+        <div id="contright2">
+            <img src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/sun-square.jpg" width="600px" height=" 300px">
+        </div>
+        <div id="contright3">
+            <img src="https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner03_TileDesktop.jpg"width="600px" height=" 300px">
+        </div>
+        </div>
+    </div>
+</div>
+<img src="https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner05_Final2ndDec21.jpg" width="100%">
+<img src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/whatsapp.png" width="100%">
+</header>
+<div class="footer">
+    <div class="foot1">
+        <div class="hfoot">
+           <h3 class="heading">MEET OUR HAPPY CUSTOMERS</h3> 
+        </div>
+        <div class="videos">
+            <div class="video">
+    <iframe src="https://www.youtube.com/embed/HYPqf_eVvvM?autoplay=1" width="100%" height="280px"></iframe>
+</div>
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/SQm3RxXRunw?autoplay=1" width="100%" height="280px"></iframe>
+</div>
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/IZpUQ-S_LcM?autoplay=1" width="100%" height="280px"></iframe>
+</div>
+            </video>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<div class="endsec">
+    <div class="sec1">
+        <h1 class="txt-strong">Buy The Best Eyewear From Lenskart</h1>
+        <br>
+        <p>Lenskart Is The Leading E-Commerce Portal For Eyewear In India. It Has Revolutionised The Eyewear Industry In The Country With Its Omni-Channel Approach. From An Ever-Growing Number Of Offline Stores Across Major Cities In The Country To Innovative Integration Of Technology While Purchasing Online, Lenskart Caters To Every Customer With Several Deals And Offers.</p>
+<br>
+         <p>   A One-Stop Online Solution For Purchasing Eyewear And Its Accessories, Lenskart Delivers Them Right At Your Doorstep With Convenient 
+            Methods Of Payment. Sunglasses As Well As Eyeglasses Are Available For Men And Women In A Diverse Array Of Styles And Trendy Colours. 
+            If You Want To Try Out Contact Lenses, Pick The Ones Of Your Choice From The Extensive Variety Of Coloured Contact Lenses From Our Online Store.</p>
+    </div>
+    <div class="endsec2">
+    <div class="sec2">
+        <H2>Sunglasses </H2>
+        <hr>
+        <div class="lis">
+            <div class="serv">
+                <p id="headi"> Services</p>
+                <p>Store Locator</p>
+                <p>Enter My Power</p>
+                <p>Buying Guide</p>
+                <p>Frame Size</p>
+            </div>
+            <div class="about"> <p id="headi"> About Us</p>
+                <p>We are hiring</p>
+                <p>Refer & Earn</p>
+                <p>About Us</p>
+                <p>Lensakrt Coupons</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="sec2">
+        <H2>Eyeglasses </H2>
+        <hr>
+        <div class="lis">
+            <div class="serv">
+                <p id="headi"> HELP</p>
+                <p>FaQS</p>
+            </div>
+        </div>
+    </div>
+    <div class="sec2">
+    
+        <H2>Contact Lenses</H2>
+        <hr>
+        <div class="lis">
+            <div class="serv">
+             <img src="https://static.lenskart.com/media/desktop/img/play-store.svg">
+                 </div>
+                 <div class="serv2">
+                    <img src="https://static.lenskart.com/media/desktop/img/app-store.svg">
+                 </div>
+                 
+        </div>
+        <p>Download Lenskart App to buy</p>
+                 <p>Eyeglasses, Sunglasses and Contact Lenses</p>
+    </div>
+</div>
+<hr>
+<div class="last">
+    <div class="lefft">
+        <p> T&C </p> <P> PRIVACY</P> <P>DISCLAIMER</P>
+    </div>
+    <div class="right">
+        <h4 id="ysp"> Follow Us at</h4>
+        <div class="iconn">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+    </div>
+</div>
+</div>
+</head>
+<body>
+
+</body>
+</html>
